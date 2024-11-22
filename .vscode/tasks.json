@@ -1,0 +1,43 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe Build my_lib",
+            "command": "C:/MinGW/bin/gcc.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}\\my_lib\\x01_Intro\\*h",
+                "${workspaceFolder}\\my_lib\\x01_Intro\\*c",
+                "${workspaceFolder}\\my_lib\\x02_Thread_creation\\*h",
+                "${workspaceFolder}\\my_lib\\x02_Thread_creation\\*c",
+                "${workspaceFolder}\\my_lib\\x03_Thread_race\\*h",
+                "${workspaceFolder}\\my_lib\\x03_Thread_race\\*c",
+                "${workspaceFolder}\\my_lib\\x04_Dead_lock\\*h",
+                "${workspaceFolder}\\my_lib\\x04_Dead_lock\\*c",
+                "${workspaceFolder}\\my_lib\\x05_Mutex\\*h",
+                "${workspaceFolder}\\my_lib\\x05_Mutex\\*c",
+                "${workspaceFolder}\\my_lib\\x06_product_consum\\*h",
+                "${workspaceFolder}\\my_lib\\x06_product_consum\\*c",
+                "${workspaceFolder}\\my_lib\\x07_philozophers_problem\\*h",
+                "${workspaceFolder}\\my_lib\\x07_philozophers_problem\\*c",
+                "${workspaceFolder}\\my_lib\\x08_Events\\*h",
+                "${workspaceFolder}\\my_lib\\x08_Events\\*c",
+                "${file}",
+                "-o",
+                "${workspaceFolder}\\xOutput\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "My custom task"
+        }
+    ],
+    "version": "2.0.0"
+}
